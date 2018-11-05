@@ -56,4 +56,20 @@ function printChart(orgChart, tier = 0) {
   });
 }
 
-printChart(hierarchicalChart);
+// printChart(hierarchicalChart);
+
+Object.keys(hierarchicalChart).forEach(key => {
+  console.log(key);
+
+  Object.keys(hierarchicalChart[key]).forEach(key2 => {
+    console.log(`    ${key2}`);
+
+    Object.keys(hierarchicalChart[key][key2]).forEach(key3 => {
+      console.log(`        ${key3}`);
+
+      Object.keys(hierarchicalChart[key][key2][key3]).forEach(key4 => {
+        console.log(`           ${key4}`);
+      });
+    });
+  });
+});
