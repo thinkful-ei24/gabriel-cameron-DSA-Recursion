@@ -7,3 +7,15 @@ const stringSplitter = (str, sep) => {
 };
 
 console.log(stringSplitter('hello there Bob', ' '));
+
+const iterativeSplitter = (str, sep) => {
+  const splitStr = str.split('');
+  for(let i=0; i<splitStr.length; i++){
+    if(splitStr[i] === sep){
+      splitStr[i] = '';
+    }
+  }
+  return splitStr.join('');
+};
+
+console.log(iterativeSplitter('hello there Bob', ' '));
