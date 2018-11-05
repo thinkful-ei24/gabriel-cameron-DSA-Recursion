@@ -7,3 +7,15 @@ function triangle(num) {
 }
 
 console.log(triangle(6));
+
+function iterativeTriangle(num) {
+  let total = 0;
+
+  for (let i = 0; i <= num; i++) {
+    total = total + i;
+  }
+
+  return total;
+}
+
+console.log(iterativeTriangle(6));
