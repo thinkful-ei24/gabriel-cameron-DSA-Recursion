@@ -5,7 +5,7 @@ function binary(num) {
 
   const remainder = num % 2;
 
-  return remainder + binary((num - remainder) / 2);
+  return binary((num - remainder) / 2) + remainder;
 }
 
 console.log(binary(3));
