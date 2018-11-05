@@ -15,3 +15,7 @@ function double(array) {
 
 console.log(double([1, 2, 3]));
 console.log(double([2, 4, 6]));
+
+const doubledArray = [1, 2, 3].map(number => number * 2);
+
+console.log(doubledArray);
